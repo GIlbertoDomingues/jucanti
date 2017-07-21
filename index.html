@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Jucanti - Design, foco e coração</title>
-        <meta name="description" content="">
+        <meta name="description" content="Olá! Meu nome é Juliana Cantieri, sou Designer Digital (UI)">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -22,38 +22,42 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <header>
-            <img class="background" src="img/destaque-home.jpg">
+        <header class="header-home">
+            <img class="background hide-on-small" src="img/destaque-home.jpg">
+            <img class="background show-on-small" src="img/destaque-home-p.jpg">
             <div class="container">
-                <nav>
+                <nav id="menu">
                     <div class="nav-wrapper">
-                        <a href="#!" class="brand-logo">
-                            <img src="img/logo-jucanti.svg" alt="">
+                        <a href="index.html" class="brand-logo">
+                            <img class="hide-on-small" src="img/logo-jucanti.svg" alt="">
+                            <img class="show-on-small" src="img/logo-icon.svg" alt="">
                         </a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#">Perfil</a></li>
-                            <li><a href="#">Projeto Vivo</a></li>
-                            <li><a href="#">Projeto GVT</a></li>
+                        <ul class="right">
+                            <li><a id="btn-perfil" href="#perfil">Perfil</a></li>
+                            <li><a href="vivo.html">Projeto Vivo</a></li>
+                            <li><a href="gvt.html">Projeto GVT</a></li>
                         </ul>
                     </div>
                 </nav>
 
                 <div class="wrap-description-home">
-                    <h2>Me chamo<br><strong>Juliana Cantieri</strong>, sou<br>designer digital.</h2>
-                    <p>Navegue e conheça meu perfil <br>e os últimos projetos desenvolvidos.<br>Quer entrar em contato?</p>
-                    <a class="waves-effect waves-light btn btn-gray" href="">Fale com jucanti</a>
+                    <h2 class="hide-on-small">Me chamo<br><strong>Juliana Cantieri</strong>, sou<br>designer digital.</h2>
+                    <h2 class="show-on-small">Me chamo<br><strong>Juliana Cantieri</strong>,<br>sou designer<br>digital.</h2>
+                    <p class="hide-on-small">Navegue e conheça meu perfil<br>e os últimos projetos desenvolvidos.<br>Quer entrar em contato?</p>
+                    <p class="show-on-small">Navegue e conheça meu perfil <br>e os últimos projetos<br>desenvolvidos.<br>Quer entrar em contato?</p>
+                    <a class="waves-effect waves-light btn btn-gray" href="mailto:jucanti@gmail.com?Subject=Jucanti" target="_top">Fale com jucanti</a>
                 </div>
 
             </div>
         </header>
 
-        <section class="container">
+        <section class="container" id="perfil">
             <div class="row">
                 <div class="wrap-phofile col s10 offset-s1">
                     <h2>Perfil</h2>
                     <p>Olá! Meu nome é <strong>Juliana Cantieri</strong>, sou <strong>Designer Digital (UI)</strong>. Atualmente trabalho no grupo <strong>Telefônica Vivo, em Curitiba</strong>. Tenho experiência na área digital há mais de 10 anos. Meu processo de trabalho é focado no desenvolvimento de visuais amigáveis, na usabilidade e performance, cruzando as necessidades dos usuários, as estratégias de negócios dos clientes, objetivo de cada projeto até a geração de resultados. Traduzo as soluções criadas no visual das interfaces. </p>
 
-                    <div class="col s5">
+                    <div class="col s5 wrap-mobile">
                         <h4>Expertise</h4>
                         <ul>
                             <li>Responsável pelo Design Visual das interfaces (UI)</li>
@@ -63,7 +67,7 @@
                             <li>Conhecimento em Experiência do Usuário (UX) e aplicação de pesquisa de Design Emocional</li>
                         </ul>
                     </div>
-                    <div class="col s3 offset-s1">
+                    <div class="col s3 offset-s1 wrap-mobile">
                         <h4>Experiência</h4>
 
                         <h6>Telefônica Vivo Brasil</h6>
@@ -74,8 +78,13 @@
                         <span>Designer Digital Sênior</span>
                         <img class="timeline" src="img/timeline-2-home.jpg" alt="">
                         
+                        <div class="wrap-clients-mobile show-on-small">
+                            <h4>Clientes</h4>
+                            
+                            <img src="img/logos-home-p.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="col s3">
+                    <div class="col s3 hide-on-small">
                         <h4>Clientes</h4>
                         
                         <img src="img/logos-home.jpg" alt="">
@@ -93,14 +102,14 @@
                 <div class="col s6">
                     <div class="wrap-button-footer">
                         <span>Projetos antigos:</span>
-                        <a class="waves-effect waves-light btn btn-gray" href="">Behance</a>
+                        <a class="waves-effect waves-light btn btn-gray" href="https://www.behance.net/jucanti" target="_blank">Behance</a>
                     </div>
                 </div>
                 
                 <div class="col s6">
                     <div class="wrap-button-footer left">
                         <span>Mais informações:</span>
-                        <a class="waves-effect waves-light btn btn-gray" href="">Linkedin</a>
+                        <a class="waves-effect waves-light btn btn-gray" href="https://www.linkedin.com/in/juliana-cantieri-08a27b15/" target="_blank">Linkedin</a>
                     </div>
                 </div>
 
@@ -113,12 +122,6 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <script>
-            $(document).ready(function(){
-                
-            });
-        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <!--   <script>
