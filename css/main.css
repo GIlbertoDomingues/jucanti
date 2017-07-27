@@ -113,7 +113,6 @@ nav ul a {
 
 nav ul a:hover {
     background-color: transparent;
-    text-decoration: underline;
     color: #999;
 }
 
@@ -162,10 +161,12 @@ nav ul a:focus {
     height: 30px;
     line-height: 30px;
     text-transform: none;
+    box-shadow: none;
 }
 
 .btn-gray:hover{
     background-color: #000000;
+    box-shadow: none;
 }
 
 .wrap-phofile{
@@ -215,6 +216,46 @@ nav ul a:focus {
 .wrap-phofile .timeline{
     margin-bottom: 60px;
     margin-top: 10px;
+}
+
+.wrap-timeline {
+    margin: 5px 0 20px;
+    width: 70%;
+    display: block;
+}
+
+.wrap-align {
+    width: 100%;
+    display: block;
+    height: 20px;
+}
+
+.wrap-align .left-align {
+    float: left;
+}
+
+.wrap-align .right-align {
+    float: right;
+}
+
+.bg-timeline {
+    width: 100%;
+    height: 4px;
+    display: block;
+    border-radius: 3px;
+}
+
+.bg-timeline.blue-dark {
+    background: #9a1fff;
+ }
+
+ .bg-timeline.black {
+    background: #000000;
+ }
+    
+.wrap-timeline span {
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .logo-footer {
@@ -385,7 +426,16 @@ nav ul a:focus {
     display: none;
 }
 
+.show-on-small-p{
+    display: none;
+}
+
+
 @media (max-width: 768px) {
+
+    .wrap-timeline {
+        width: 100%;
+    }
     
     .header-home {
         height: 410px;
@@ -516,6 +566,10 @@ nav ul a:focus {
     nav ul a {
         font-size: 0.8rem;
         padding: 0 8px;
+    }
+
+    .show-on-small-p{
+        display: block;
     }
 }
 
